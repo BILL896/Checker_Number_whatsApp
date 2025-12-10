@@ -1,0 +1,347 @@
+/* Couleurs officielles */
+:root {
+    --site-name-color: rgb(234, 234, 234);
+    --whatsapp-green: #25D366;
+    --facebook-blue: #1877F2;
+    --twitter-blue: #1DA1F2;
+    --telegram-blue: #0088CC;
+    --tiktok-black: #000000;
+    --youtube-red: #FF0000;
+    --instagram-pink: #E1306C;
+    --background-header: #216276;
+    --background-page: #f9f9f9;
+    --background-page-violet: #cf15cf;
+    --background-page-3: #333;
+    --whatsapp-dark-green: #128C7E;
+    --whatsapp-teal-green: rgb(33, 98, 118);
+    --whatsapp-light-green: #DCF8C6;
+    --error-red: #FF4444;
+    --light-red: #FFEBEE;
+    --warning-orange: #FF9800;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:
+        radial-gradient(circle, transparent 80%,
+            var(--background-page) 100%),
+        radial-gradient(ellipse farthest-corner,
+            var(--whatsapp-teal-green) 30%,
+            var(--background-page-violet)60%);
+    color: var(--background-page-3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: var(--background-page-3);
+    /* Masquer la scrollbar tout en conservant le défilement */
+    overflow: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    /* WebKit (Chrome, Safari) */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+a {
+    color: var(--site-name-color);
+    text-decoration: none;
+}
+
+#site-name {
+    color: var(--site-name-color);
+    position: relative;
+    margin-top: 4vh;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: rgb(234, 234, 234);
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+img {
+    border-radius: 50%;
+    margin: 1vw;
+    box-shadow: 0 1px 10px rgb(234, 234, 234);
+    position: relative;
+    /* width: 80px;
+    height: 80px; */
+
+}
+
+.container-header {
+    background-color: var(--background-header);
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.CNW {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.enteteDucarte {
+    background-color: var(--whatsapp-teal-green);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pillNav2 {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    text-overflow: ellipsis;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.783);
+    border-radius: 50px;
+    padding: 16px;
+
+}
+
+.pillNav2:hover .nav-item {
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    color: var(--bs-white);
+}
+
+.checker-box {
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+#phone-info {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--whatsapp-teal-green);
+}
+
+#phone-help {
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--whatsapp-teal-green);
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: monospace;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: var(--whatsapp-green);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37, 211, 102, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--whatsapp-green);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.copy-button,
+.open-button {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+button:hover {
+    background-color: var(--whatsapp-dark-green);
+}
+
+.result-item {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+.wa-spinner-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.687);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 1;
+    transition: opacity 1000ms ease, visibility 100ms;
+}
+
+.wa-spinner-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wa-spinner {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgba(0, 0, 0, 0.053);
+    border-top-color: #2b7cff;
+    border-radius: 50%;
+    animation: wa-spin 0.9s linear infinite;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.279);
+}
+
+@keyframes wa-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        border-radius: 0;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .summary {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 15px solid rgba(255, 255, 255, 0.06);
+    color: inherit;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    /* padding: 20px 10px; */
+}
+
+.footer-socials {
+    margin-bottom: 15px;
+}
+
+.footer-socials a {
+    font-size: 26px;
+    margin: 0 12px;
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-socials a.whatsapp {
+    color: var(--whatsapp-green);
+}
+
+.footer-socials a.facebook {
+    color: var(--facebook-blue);
+}
+
+.footer-socials a.twitter {
+    color: var(--twitter-blue);
+}
+
+.footer-socials a.telegram {
+    color: var(--telegram-blue);
+}
+
+.footer-socials a.github {
+    color: var(--tiktok-black);
+}
+
+.footer-socials a.youtube {
+    color: var(--youtube-red);
+}
+
+.footer-socials a.instagram {
+    color: var(--instagram-pink);
+}
+
+/* Effet hover : grossissement */
+.footer-socials a:hover {
+    transform: scale(1.4);
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
